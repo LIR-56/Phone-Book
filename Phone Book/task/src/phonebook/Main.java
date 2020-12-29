@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import static phonebook.BubbleSortAndJumpSearch.bubbleSortAndJumpSearch;
+import static phonebook.HashTableSearch.hashTableSearch;
 import static phonebook.LinearSearch.getLinearSearchResult;
 import static phonebook.QuickSortAndBinarySearch.quickSortAndBinarySearch;
 
@@ -32,6 +33,9 @@ public class Main {
 
         System.out.println();
         quickSortAndBinarySearch(directory, findings);
+
+        System.out.println();
+        hashTableSearch(directory, findings);
     }
 
     static String timeInMsToString(long time) {
